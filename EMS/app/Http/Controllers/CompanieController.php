@@ -49,11 +49,16 @@ class CompanieController extends Controller
         'phone'=>'required',
          
         ]);
-
+       /* $ImageName= time(). '-' . '.' .$request->pic->extension();
+        dd($ImageName);
+        $file=$request->file('pic');
+        $destinationPath ='../image/ImageName';
+        $file->move($destinationPath,$ImageName);
+*/
         $store = Companie::create([
             'companies'=>$request->name,
             'email'=>$request->email,
-            'logo'=>$request->pic,
+            'logo'=>$request->logo,
             'website'=>$request->website,
             'phone'=>$request->phone,
             

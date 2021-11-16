@@ -23,7 +23,7 @@
 							
 							<input type="text" class="form-control col-4" placeholder="Enter Phone" name="phone" required="">
 							<br> 
-							<input type="file" class="form-control col-4 " placeholder="Upload Logo Image" name="pic" required="">
+							<input type="file" class="form-control col-4 " placeholder="Upload Logo Image" name="logo" required="">
 							<br>
 							<input type="text" class="form-control col-4" placeholder="Enter Email" name="email" required="">
 							<br>

@@ -47,3 +47,7 @@ Route::get('/dashboard/companyedit/{id}', [CompanieController::class, 'edit'])->
 Route::put('/companyupdate/{id}', [CompanieController::class, 'update']);
 Route::delete('/delete/{id}', [CompanieController::class, 'destroy']);
 
+//-----------------Auth--------------
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
